@@ -1,0 +1,167 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #32105f;
+    color: #ffffff;
+    margin: 0;
+}
+
+.body-container {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar ul {
+    height: 6em;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgba(255, 90, 206, 0.25);
+}
+
+.navbar li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.05em;
+    padding: 1em 1em 0em 1em;
+}
+
+.navbar li:hover {
+    border-bottom: 3px solid #92f5aa;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 10em;
+    font-style: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.15em;
+}
+
+.subtitle {
+    margin-top: 0px;
+    margin-right: 370px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+.color-title {
+    color: #ff99bb;
+}
+
+.review {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.music {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container h3 {
+    font-weight: normal;
+}
+
+th {
+    background: rgba(255, 90, 206, 0.25);
+}
+
+td {
+    padding: .2em .8em;
+    border: 1px solid rgba(16, 76, 167, 0.25);
+    background: rgba(90, 156, 255, 0.25);
+    text-align: left;
+}
+
+.top5 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+ol {
+    margin-block-start: 1em;
+    padding-inline-start: 1em;
+}
+
+.spotify-frame {
+    width: 24em;
+    margin-top: 1.60em;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.chromatica-cover {
+    height: 350px;
+    width: auto;
+}
+
+.plus-icon {
+    width: 3em;
+    height: auto;
+}
+
+.imageSize {
+    height: 350px;
+    width: auto;
+    margin: 30px;
+    border: solid 4px #ff99bb;
+}
+
+.gallery-img {
+    flex-wrap: wrap;
+}
+
+.gifsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gifsection img {
+    width: 30%;
+    height: auto;
+    margin: 50px 0px;
+}
+
+.galery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.87em;
+    margin-top: 1.25em;
+    position: relative;
+}
+
+.galery-img {
+    object-fit: cover;
+    height: 16em;
+    width: 100%;
+}
