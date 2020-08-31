@@ -43,9 +43,9 @@ body {
     color: #ffffff;
 }
 
-.title {
+#bootstrap-overrides h1 {
     font-size: 10em;
-    font-style: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-top: 1.15em;
@@ -74,7 +74,8 @@ body {
     margin: auto;
 }
 
-.container {
+.music-container,
+.gallery-container {
     margin-top: 50px;
     display: flex;
     flex-direction: row;

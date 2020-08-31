@@ -11,7 +11,7 @@
     <title>Lady Gaga</title>
 </head>
 
-<body>
+<body id="bootstrap-overrides">
     <div class="body-container">
         <header class="maintitle">
             <h1 class="title color-title">Lady Gaga</h1>
@@ -24,60 +24,61 @@
         </section>
 
         <section class="music" id="music">
-            <div class="container">
-                <div class="discography">
-                    <h2 class="color-title">Discografía</h2>
-                    <table class="albums-data">
-                        <thead>
+            <div class="music-container">
+                <div class="row">
+                    <div class="discography col-12 col-sm-6">
+                        <h2 class="color-title">Discografía</h2>
+                        <table class="albums-data">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Año</th>
+                                    <th scope="col">Título</th>
+                                </tr>
+                            </thead>
                             <tr>
-                                <th scope="col">Año</th>
-                                <th scope="col">Título</th>
+                                <td>2008</td>
+                                <td>The Fame</td>
                             </tr>
-                        </thead>
-                        <tr>
-                            <td>2008</td>
-                            <td>The Fame</td>
-                        </tr>
-                        <tr>
-                            <td>2011</td>
-                            <td>Born This Way</td>
-                        </tr>
-                        <tr>
-                            <td>2013</td>
-                            <td>Artpop</td>
-                        </tr>
-                        <tr>
-                            <td>2014</td>
-                            <td>Cheek to Cheek (con Tony Bennett)</td>
-                        </tr>
-                        <tr>
-                            <td>2020</td>
-                            <td>Chromatica</td>
-                        </tr>
-                    </table>
-                    <article>
-                        <iframe class="spotify-frame" src="https://open.spotify.com/embed/album/05c49JgPmL4Uz2ZeqRx5SP" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </article>
-                </div>
+                            <tr>
+                                <td>2011</td>
+                                <td>Born This Way</td>
+                            </tr>
+                            <tr>
+                                <td>2013</td>
+                                <td>Artpop</td>
+                            </tr>
+                            <tr>
+                                <td>2014</td>
+                                <td>Cheek to Cheek (con Tony Bennett)</td>
+                            </tr>
+                            <tr>
+                                <td>2020</td>
+                                <td>Chromatica</td>
+                            </tr>
+                        </table>
+                        <article>
+                            <iframe class="spotify-frame" src="https://open.spotify.com/embed/album/05c49JgPmL4Uz2ZeqRx5SP" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </article>
+                    </div>
 
-                <div class="top5">
-                    <h2 class="color-title">Top 5 Spotify</h2>
-                    <ol>
-                        <li>Rain on me (with Ariana Grande)</li>
-                        <li>Shallow</li>
-                        <li>Stupid Love</li>
-                        <li>Sour Candy (with Black Pink)</li>
-                        <li>Bad Romance</li>
-                    </ol>
-                    <a href="https://www.youtube.com/playlist?list=PLf5BnbCRqFj4pAtY6js7756YcTka4-Y3w"><img class="chromatica-cover" src="./img/chromatica-cover.gif" alt="Portada animada del album Chromatica"></a>
+                    <div class="top5 col-12 col-sm-6">
+                        <h2 class="color-title">Top 5 Spotify</h2>
+                        <ol>
+                            <li>Rain on me (with Ariana Grande)</li>
+                            <li>Shallow</li>
+                            <li>Stupid Love</li>
+                            <li>Sour Candy (with Black Pink)</li>
+                            <li>Bad Romance</li>
+                        </ol>
+                        <a href="https://www.youtube.com/playlist?list=PLf5BnbCRqFj4pAtY6js7756YcTka4-Y3w"><img class="chromatica-cover" src="./img/chromatica-cover.gif" alt="Portada animada del album Chromatica"></a>
+                    </div>
                 </div>
-
             </div>
 
         </section>
 
         <section class="gallery" id="images">
-            <div class="container gallery-img">
+            <div class="gallery-container gallery-img">
                 <div>
                     <img src="img/lady-gaga_madonna.jpg" class="imageSize" alt="Lady Gaga junto a Madonna">
                     <span><a href="./galery.html"><img src="./img/icons-plus.svg" class="plus-icon"></a></span>
