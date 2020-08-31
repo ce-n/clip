@@ -136,18 +136,11 @@ ol {
     margin: 1em;
 }
 
-.galery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.87em;
-    margin-top: 1.25em;
-    position: relative;
-}
-
 .galery-img {
     object-fit: cover;
     height: 16em;
     width: 100%;
+    margin-top: 1.05em;
 }
 
 .gif-size {
