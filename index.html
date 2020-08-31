@@ -26,7 +26,7 @@
         <section class="music" id="music">
             <div class="music-container">
                 <div class="row">
-                    <div class="discography col-12 col-sm-6">
+                    <div class="discography col-12 col-md-6">
                         <h2 class="color-title">Discografía</h2>
                         <table class="albums-data">
                             <thead>
@@ -61,7 +61,7 @@
                         </article>
                     </div>
 
-                    <div class="top5 col-12 col-sm-6">
+                    <div class="top5 col-12 col-md-6">
                         <h2 class="color-title">Top 5 Spotify</h2>
                         <ol>
                             <li>Rain on me (with Ariana Grande)</li>
@@ -78,8 +78,8 @@
         </section>
 
         <section class="gallery" id="images">
-            <div class="gallery-container gallery-img">
-                <div>
+            <div class="row">
+                <div class="col-12">
                     <img src="img/lady-gaga_madonna.jpg" class="imageSize" alt="Lady Gaga junto a Madonna">
                     <span><a href="./galery.html"><img src="./img/icons-plus.svg" class="plus-icon"></a></span>
                 </div>
@@ -87,9 +87,18 @@
         </section>
 
         <section class="gifsection">
-            <img src="./img/JW-Horse.gif" alt="Lady Gaga montada a un caballo">
-            <img src="./img/JW-Glass.gif" alt="Animación de Lady Gaga">
-            <img src="https://media.giphy.com/media/WTD74Gef1vatq/giphy.gif" alt="Fragmento del videoclip Bad Romance">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="gif-size" src="./img/JW-Horse.gif" alt="Lady Gaga montada a un caballo">
+                </div>
+                <div class="col-12 gif-size col-md-4">
+                    <img class="gif-size" src="./img/JW-Glass.gif" alt="Animación de Lady Gaga">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="gif-size" src="https://media.giphy.com/media/WTD74Gef1vatq/giphy.gif" alt="Fragmento del videoclip Bad Romance">
+                </div>
+            </div>
+
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

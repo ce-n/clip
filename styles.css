@@ -72,9 +72,9 @@ body {
 .music {
     width: 80%;
     margin: auto;
+    margin-top: 6em;
 }
 
-.music-container,
 .gallery-container {
     margin-top: 50px;
     display: flex;
@@ -97,19 +97,13 @@ td {
     text-align: left;
 }
 
-.top5 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2em;
-}
-
 ol {
     margin-block-start: 1em;
     padding-inline-start: 1em;
 }
 
 .spotify-frame {
-    width: 24em;
+    width: 100%;
     margin-top: 1.60em;
 }
 
@@ -120,9 +114,10 @@ ol {
     margin-top: 50px;
 }
 
-.chromatica-cover {
-    height: 350px;
-    width: auto;
+.chromatica-cover,
+.gif-size {
+    width: 100%;
+    object-fit: cover
 }
 
 .plus-icon {
@@ -137,20 +132,8 @@ ol {
     border: solid 4px #ff99bb;
 }
 
-.gallery-img {
-    flex-wrap: wrap;
-}
-
 .gifsection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.gifsection img {
-    width: 30%;
-    height: auto;
-    margin: 50px 0px;
+    margin: 1em;
 }
 
 .galery-container {
@@ -165,4 +148,32 @@ ol {
     object-fit: cover;
     height: 16em;
     width: 100%;
+}
+
+.gif-size {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    #bootstrap-overrides h1 {
+        font-size: 5em;
+    }
+    .body-container {
+        width: 100%;
+    }
+    .review,
+    .music {
+        margin-top: 4em;
+    }
+    .top5 {
+        margin-top: 4em;
+    }
+    .imageSize {
+        object-fit: cover;
+        width: 80%;
+    }
+    .plus-icon {
+        margin-left: 15em;
+    }
 }
