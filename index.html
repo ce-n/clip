@@ -12,32 +12,52 @@
 </head>
 
 <body id="bootstrap-overrides">
-    <div class="body-container">
+    
         <header class="maintitle">
-            <nav class="navbar navbar-expand-sm">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">Reseña</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#music">Discografía</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#images">Galería</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
-                  </li>
-                </ul>
-              </nav>
-
-            <h1 class="title color-title">Lady Gaga</h1>
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#about">Inicio<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about">Reseña</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#music">Discografía</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#images">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contacto</a>
+                            </li>
+                          </ul>
+                          </div>
+                    </nav>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <h1 class="title color-title">Lady Gaga</h1>
+                </div>
+            </div>
         </header>
 
         <section class="review">
-            <h2 class="color-title" id="about">Reseña</h2>
-            <p>Stefani Joanne Angelina Germanotta (Nueva York, 28 de marzo de 1986), más conocida por su nombre artístico Lady Gaga, es una cantante, compositora, productora, bailarina, actriz, activista y diseñadora de moda estadounidense.
-            </p>
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <h2 class="color-title" id="about">Reseña</h2>
+                    <p>Stefani Joanne Angelina Germanotta (Nueva York, 28 de marzo de 1986), más conocida por su nombre artístico Lady Gaga, es una cantante, compositora, productora, bailarina, actriz, activista y diseñadora de moda estadounidense.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="music" id="music">
@@ -117,36 +137,41 @@
             </div>
         </section>
         <section class="contact-form" id="contact">
-            <form class="was-validated">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input class="form-control" id="name" placeholder="Nombre" required>
-                    <div class="valid-feedback">Valido</div>
-                    <div class="invalid-feedback">Por favor complete este campo</div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form class="was-validated">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input class="form-control" id="name" placeholder="Nombre" required>
+                            <div class="valid-feedback">Valido</div>
+                            <div class="invalid-feedback">Por favor complete este campo</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Apellido</label>
+                            <input class="form-control" id="last-name" placeholder="Apellido" required>
+                            <div class="valid-feedback">Valido</div>
+                            <div class="invalid-feedback">Por favor complete este campo</div>
+                          </div>
+                        <div class="form-group">
+                          <label for="email-address">Email address</label>
+                          <input type="email" class="form-control" id="email-address" placeholder="nombre@email.com" required>
+                          <div class="valid-feedback">Valido</div>
+                          <div class="invalid-feedback">Por favor complete este campo</div>
+                        </div>
+                        <div class="form-group">
+                          <label for="message">Mensaje</label>
+                          <textarea class="form-control" id="message" rows="3" required></textarea>
+                          <div class="valid-feedback">Valido</div>
+                          <div class="invalid-feedback">Por favor complete este campo</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
                 </div>
-                <div class="form-group">
-                    <label for="last-name">Apellido</label>
-                    <input class="form-control" id="last-name" placeholder="Apellido" required>
-                    <div class="valid-feedback">Valido</div>
-                    <div class="invalid-feedback">Por favor complete este campo</div>
-                  </div>
-                <div class="form-group">
-                  <label for="email-address">Email address</label>
-                  <input type="email" class="form-control" id="email-address" placeholder="nombre@email.com" required>
-                  <div class="valid-feedback">Valido</div>
-                  <div class="invalid-feedback">Por favor complete este campo</div>
-                </div>
-                <div class="form-group">
-                  <label for="message">Mensaje</label>
-                  <textarea class="form-control" id="message" rows="3" required></textarea>
-                  <div class="valid-feedback">Valido</div>
-                  <div class="invalid-feedback">Por favor complete este campo</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+            </div>
+            
 
         </section>
-    </div>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
