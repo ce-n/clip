@@ -5,43 +5,6 @@ body {
     margin: 0;
 }
 
-/*.navbar-nav {
-    width: 100%;
-}
-
-.navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 0;
-}
-
-.navbar ul {
-    height: 6em;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background: rgba(255, 90, 206, 0.25);
-}
-
-.navbar li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2.05em;
-    padding: 1em 1em 0em 1em;
-}
-
-.navbar li:hover {
-    border-bottom: 3px solid #92f5aa;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #ffffff;
-}*/
 
 #bootstrap-overrides h1 {
     font-size: 10em;
@@ -49,10 +12,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin-top: 1.15em;
-}
-
-#bootstrap-overrides {
-    margin: 0;
 }
 
 .subtitle {
@@ -134,9 +93,7 @@ ol {
 }
 
 .imageSize {
-    height: 350px;
-    width: auto;
-    margin: 30px;
+    width: 100%;
     border: solid 4px #ff99bb;
 }
 
@@ -151,10 +108,9 @@ ol {
     margin-top: 1.05em;
 }
 
-/*.gif-size {
-    width: 100%;
-    object-fit: cover;
-}*/
+.no-padding {
+    padding: 0;
+}
 
 @media (max-width: 576px) {
     #bootstrap-overrides h1 {
