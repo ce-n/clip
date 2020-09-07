@@ -82,9 +82,35 @@ img {
 }
 
 .adivinanza-titulo {
-    font-size: 5em;
+    font-size: 3em;
+    text-align: left;
 }
 
+.numero-intentos {
+    font-size: 1.60em;
+    font-weight: 600;
+    padding-top: 2em;
+}
+
+.adivinanza {
+    font-size: 1.8em;
+}
+
+.text-area-size {
+    width: 100%;
+    height: 7em;
+    padding-bottom: 2em;
+}
+
+.button-size {
+    margin-top: 1.75em;
+
+}
+
+.pista-style {
+    margin-top: 11em;
+    font-size: 1.45em;
+}
 
 @media (max-width: 1199px) {
     #navbar-color a {
@@ -101,6 +127,12 @@ img {
         margin-right: auto;
     }
 
+}
+
+@media (max-width: 768px) {
+    .pista-style {
+        margin-top: 2em
+    }
 }
 
 @media (max-width: 576px) {
@@ -144,4 +176,13 @@ img {
     .contact-form form {
         margin-bottom: 2em;
     }
+
+    .adivinanza-titulo {
+        font-size: 1.25em;
+    }
+
+    .button-size-mb {
+        width: 2em;
+    }
+    
 }
