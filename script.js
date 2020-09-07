@@ -1,8 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     let botonProbar = document.getElementById('boton-probar')
-    let intento = 0
-    let numeroClicksBoton = 0
+    let respuestaAdivinanza = document.getElementById('respuesta-adivinanza')
+    let intentosRestantes = document.getElementById('intentos-restantes')
+    let pista = document.getElementById('pista')
+    let respuestas = []
+
+    const guardarRespuesta = () => {
+        let respuesta = respuestaAdivinanza.value
+        respuestas.push(respuesta)
+        console.log(respuestas)
+
+    }
 
     const resolverAdivinanza = (respuesta) => {
 
@@ -16,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let resultado
 
 
-        if (respuestaConfig == 'NACEUNAESTRELLA' || respuestaConfig == 'ASTARTISBORN') {
+        if (respuestaConfig == 'NACEUNAESTRELLA' || respuestaConfig == 'ASTARISBORN') {
 
             resultado = true
 
@@ -29,91 +38,60 @@ document.addEventListener('DOMContentLoaded', () => {
         return resultado
     }
 
-    /*
-    botonProbar.addEventListener('click', () => {
+    const comprobarRespuesta = () => {
 
-        let respuestaAdivinanza = document.getElementById('respuesta-adivinanza')
-        let valor = respuestaAdivinanza.value
+        let intentos = respuestas.length
+        
+        for (let index = 0; index < intentos; index++) {
+            const element = respuestas[index];
+            console.log('respuesta enviada '+ element)
+            let esCorrecta = resolverAdivinanza(element)
+            console.log('es correcta '+ esCorrecta)
+            console.log('numero de intentos ' + respuestas.length)
 
-        numeroClicksBoton += 1
+            if (resolverAdivinanza(element)) {
+                console.log('lo lograste')
+                intentosRestantes.innerHTML = 'Si!! adivinaste :D'
+                botonProbar.disabled = true;
+                pista.innerHTML = ''
+    
+            } else {
 
-        if (numeroClicksBoton < 5 && resolverAdivinanza(valor)) {
+                switch (intentos) {
+                    case 1:
+                        console.log('Quedan 3 intentos')
+                        intentosRestantes.innerHTML = 'Quedan 3 intentos'
+                        break;
+                    case 2:
+                        console.log('Quedan 2 intentos')
+                        intentosRestantes.innerHTML = 'Quedan 2 intentos'
+                        pista.innerHTML = 'El oscar fue por Mejor Canción Original'
+                        break;
+                    case 3:
+                        console.log('Último intento')
+                        intentosRestantes.innerHTML = 'Último intento'
+                        pista.innerHTML = 'Es la tercera adaptación cinematográfica de una película de 1937'
+                        break;
+                    case 4:
+                        console.log('NO HAY MÁS INTENTOS')
+                        intentosRestantes.innerHTML = 'No quedan más intentos :('
+                        pista.innerHTML = ''
+                        break;
+                }
 
-            console.log('lo lograste')
-
-        } else {
-
-            switch (numeroClicksBoton) {
-                case 1:
-                    console.log('Quedan 3 intentos')
-                    resolverAdivinanza(valor)
-                    break;
-                case 2:
-                    console.log('Quedan 2 intentos')
-                    resolverAdivinanza(valor)
-                    break;
-                case 3:
-                    console.log('Último intento')
-                    break;
-                default:
-                    if (resolverAdivinanza(valor)) {
-                        console.log('lo lograste')
-                    } else {
-                        console.log('perdiste')
-                    }
-                    break
             }
+            
         }
-
-    })*/
-
-    //
-
-    /*for (intento; intento < 4; intento++) {
-
-        botonProbar.addEventListener('click', () => {
-
-            let respuestaAdivinanza = document.getElementById('respuesta-adivinanza')
-            let valor = respuestaAdivinanza.value
-
-            console.log('intento numero' + intento + ' ' + valor)
-
-            if (resolverAdivinanza(valor)) {
-                intento = 4
-            }
-
-
-        })
-
-    }*/
-
-    const capturarRespuesta = () => {
-        botonProbar.addEventListener('click', (event) => {
-            let respuestaAdivinanza = document.getElementById('respuesta-adivinanza')
-            let respuestaEnviada = respuestaAdivinanza.value
-            event.preventDefault()
-                //console.log(respuestaEnviada)
-            return respuestaEnviada
-        })
-
     }
 
-    console.log(capturarRespuesta())
+    botonProbar.addEventListener ('click', () => {
+        guardarRespuesta()
+        comprobarRespuesta()
 
-    /*for (intento; intento < 4; intento++) {
-
-
-
-        console.log('intento numero' + intento +)
-
-        if (intento == 0) {
-            let esCorrecta = resolverAdivinanza(valor)
-            if (esCorrecta) {
-                break
-            }
-
+        if(respuestas.length === 4) {
+            botonProbar.disabled = true;
         }
+    })
 
-    }*/
 
 })
