@@ -14,22 +14,22 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class=" col-12">
                 <h1 class="adivinanza-titulo">Probá tu conocimiento de Lady Gaga</h1>
             </div>
         </div>
         <!--cierre row-->
         <div class="row">
-            <div class="col-6">
-                <p>¿Cuál es el nombre de la pelicula por la cual Lady Gaga ganó un Oscar?</p>
+            <div class="col-12 col-md-6">
+                <p id="intentos-restantes" class="numero-intentos">Tenes 4 intentos</p>
+                <p class="adivinanza">¿Cuál es el nombre de la película por la cual Lady Gaga ganó un Oscar?</p>
                 <form>
-                    <textarea form="adivinanza-form" placeholder="Escribe tu respuesta aquí" id="respuesta-adivinanza"></textarea>
+                    <textarea form="adivinanza-form" placeholder="Escribe tu respuesta aquí" id="respuesta-adivinanza" class="text-area-size"></textarea>
                 </form>
+                <button type="button" class="btn btn-primary btn-lg button-size" id="boton-probar">Probar</button>
             </div>
-            <div class="col-6">
-                <button type="button" class="btn btn-primary btn-lg" id="boton-probar">Probar</button>
-                <p id="intentos-restantes">Tenes 4 intentos</p>
-                <p id="pista"></p>
+            <div class="col-12 col-md-6"> 
+                <p id="pista" class="pista-style"></p>
             </div>
 
         </div>

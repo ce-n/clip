@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     case 2:
                         console.log('Quedan 2 intentos')
                         intentosRestantes.innerHTML = 'Quedan 2 intentos'
-                        pista.innerHTML = 'El oscar fue por Mejor Canción Original'
+                        pista.innerHTML = 'PISTA: El oscar fue por Mejor Canción Original'
                         break;
                     case 3:
                         console.log('Último intento')
                         intentosRestantes.innerHTML = 'Último intento'
-                        pista.innerHTML = 'Es la tercera adaptación cinematográfica de una película de 1937'
+                        pista.innerHTML = 'PISTA: Es la tercera adaptación cinematográfica de una película de 1937'
                         break;
                     case 4:
                         console.log('NO HAY MÁS INTENTOS')
