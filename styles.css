@@ -102,15 +102,15 @@ img {
     padding-bottom: 2em;
 }
 
-.button-size {
-    margin-top: 1.75em;
-
-}
-
 .pista-style {
-    margin-top: 11em;
+    margin-top: 1.25em;
     font-size: 1.45em;
 }
+
+.button-margin {
+    margin-bottom: 1.75em;
+}
+
 
 @media (max-width: 1199px) {
     #navbar-color a {
@@ -127,12 +127,14 @@ img {
         margin-right: auto;
     }
 
+    .pista-style {
+        font-size: 1.45em;
+    }
+
 }
 
 @media (max-width: 768px) {
-    .pista-style {
-        margin-top: 2em
-    }
+    
 }
 
 @media (max-width: 576px) {
